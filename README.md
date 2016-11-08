@@ -1,6 +1,6 @@
 # QGIS-Plugin
 # Analysis Document - Bivariate Choropleth Map
-Quan Zhou [UrsulaQuan](https://github.com/UrsulaQuan)  
+Quan Zhou ([UrsulaQuan])(https://github.com/UrsulaQuan)  
 11-07-2016  
 
 ## Introduction
@@ -20,6 +20,7 @@ Quan Zhou [UrsulaQuan](https://github.com/UrsulaQuan)
 4, Generate bivariate choropleth map.
 
 ## Current System
+This QGIS Bivariate Choropleth Map plugin would be built based on PySAL visualization, but add multiple atrributes in mapping. The GeoVISTA toolkit bivariate mapping function is foucused on the spatial analysis and statistical realtionship between two attributes analysis. IndieMapper is well designed and developed online geovialization software, but is very slow and inconvenient to do a series of data analysis, visualization and map exporting operations. ArcGIS Bivariate Renderer is another visualiztion tool on ArcView with beautiful cholors scheme choices. The weakness is that legend is bad designed.
 
 #### PySAL visualization
 [PySAL visualization](http://pysal.readthedocs.io/en/v1.11.0/library/contrib/index.html?highlight=visualization) is the base of this plugin development. It provides the simple (use- and dependency-wise) and lightweight conversion of PySAL structures into commonly used visualizations. The functions contain the classification methodes and number, colors schmem choosing and choropleth map preview.
@@ -45,17 +46,15 @@ This plugin will work as choroBrewer to provide users choices to pick up colors 
 Listing of features to be implemented:
 * Read attribute table content and dispaly needed information in interface
 * Data Input
-1. Choose polygon feature class
-2. Choose fields of data to read
-3. Generate histograms to visualize the distributions
-4. Choose bivariate color scheme
+  1. Choose polygon feature class
+  2. Choose fields of data to read
+  3. Generate histograms to visualize the distributions
+  4. Choose bivariate color scheme
 * Mapping
-1. Generate bivariate legend
-2. Preview of choropleth map
-3. Generate new layer of bivariate choropleth map in QGIS
+  1. Generate bivariate legend
+  2. Preview of choropleth map
+  3. Generate new layer of bivariate choropleth map in QGIS
 * User Interface: Operation panel and Preview panel in sigle dialog box
-
-![alt text](ui.png)
 
 ### Nonfunctional Requirements
 #### Usability
@@ -82,4 +81,4 @@ Nov 15 | Communication between interface and data
 Dec 01 | Plugin on QGIS and test
 
 #### Repository
-URL for project repository: [project repository](git@github.com:UrsulaQuan/QGIS-Plugin.git)
+URL for project repository: [project repository](http://git@github.com:UrsulaQuan/QGIS-Plugin.git)
